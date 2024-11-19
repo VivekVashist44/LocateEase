@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e9f0f5, #ffffff);
+}
+
+/* Logo Styling */
+.logo {
+    max-width: 150px; /* Increased size */
+    height: auto;
+    padding-left: 10px; /* Adding some padding */
+    margin: 5 px 0; /* Adding margin for spacing */
+
+}
+
+/* Header Styling */
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-bottom: 2px solid #17a2b8; /* Matching header border color with card */
+}
+
+/* Align header content */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+/* Heading Styles */
+h1, h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #17a2b8; /* Vibrant color for the line */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #17a2b8; /* Focus color */
+    outline: none;
+    background: #fff;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #17a2b8; /* Matching button color with the header */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #138496; /* Slightly darker for hover */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px;
+    }
+
+    .logo {
+        max-width: 100px; /* Adjust logo size for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .logo {
+        max-width: 80px; /* Further adjust logo size for small screens */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+

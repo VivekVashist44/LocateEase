@@ -1,0 +1,64 @@
+/* Style for header background */
+.header-bg {
+    background-color: #007bff;
+}
+
+/* Style for the table */
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Style for active pagination */
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Additional custom styles */
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+h1.h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Style for table header */
+.table thead th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style for table body */
+.table tbody tr td {
+    vertical-align: middle;
+}
+
+/* Style for pagination links */
+.page-link {
+    color: #007bff;
+}
+
+.page-link:hover {
+    color: #0056b3;
+}
+
+/* Footer style */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Custom container padding */
+.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
